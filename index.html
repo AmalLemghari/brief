@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Gim</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <div id="navbar">
+            <a href="index.html" class="logo">Go Gim</a>
+            <div class="menu-toggle">
+              <div class="burger-line"></div>
+              <div class="burger-line"></div>
+              <div class="burger-line"></div>
+          </div>
+            <nav role="navigation" class="div">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <p>Welcom Our Go Gim</p>
+            <h1>Keep<span class="primary-text"> Refresh & Srtong</span> Your Body</h1>
+            <p>There are many variations of a passages of Lorem Ipsum available, but the<br>majority have suffered alteration in some form</p>
+            <a href="#contact" class="btn btn-primary">Read more</a>
+        </div>
+    </header>
+
+    <!-- FAQ -->
+    <div class="faq">
+    <h2>FAQ</h2>
+
+    <button class="accordion"><strong>So how do we get clarify?</strong></button>
+    <div class="panel">
+      <p>Motivation is not an accident or something that someone else can give you — you are the only one with the power to motivate you.<br>Motivation cannot be an external force, it must come from within as the natural product of your desire to achieve something and<br>your belief that you are capable to succeed at your goal. Success is something of which we all want more.</p>
+        <div class="reponse">
+          <ul style="list-style-type:disc;">
+            <li>Commitment is something that comes from understanding that!</li>
+            <li>Its price and then having the willingness to pay that price.</li>
+            <li>his is important because nobody wants to put significant.</li>
+            <li>Effort into something, only to find.</li>
+            <li>Out after the fact that the price was too high.</li>
+          </ul>
+        </div>  
+    </div>
+
+    <button class="accordion"><strong>What doas success look like to me?</strong></button>
+    <div class="panel">
+      <p>Motivation is not an accident or something that someone else can give you — you are the only one with the power to motivate you.<br>Motivation cannot be an external force, it must come from within as the natural product of your desire to achieve something and<br>your belief that you are capable to succeed at your goal. Success is something of which we all want more.</p>
+        <div class="reponse"> 
+          <ul style="list-style-type:disc;">
+            <li>Commitment is something that comes from understanding that!</li>
+            <li>Its price and then having the willingness to pay that price.</li>
+            <li>his is important because nobody wants to put significant.</li>
+            <li>Effort into something, only to find.</li>
+            <li>Out after the fact that the price was too high.</li>
+          </ul>
+        </div>  
+    </div>
+
+    <button class="accordion"><strong>What will your daily life be like?</strong></button>
+    <div class="panel">
+      <p>Motivation is not an accident or something that someone else can give you — you are the only one with the power to motivate you.<br>Motivation cannot be an external force, it must come from within as the natural product of your desire to achieve something and<br>your belief that you are capable to succeed at your goal. Success is something of which we all want more.</p>
+        <div class="reponse">
+          <ul style="list-style-type:disc;">
+            <li>Commitment is something that comes from understanding that!</li>
+            <li>Its price and then having the willingness to pay that price.</li>
+            <li>his is important because nobody wants to put significant.</li>
+            <li>Effort into something, only to find.</li>
+            <li>Out after the fact that the price was too high.</li>
+        </ul>
+        </div>
+    </div>
+
+    <button class="accordion"><strong>I use this success to make a different for others?</strong></button>
+    <div class="panel">
+      <p>Motivation is not an accident or something that someone else can give you — you are the only one with the power to motivate you.<br>Motivation cannot be an external force, it must come from within as the natural product of your desire to achieve something and<br>your belief that you are capable to succeed at your goal. Success is something of which we all want more.</p>
+        <div class="reponse">
+          <ul style="list-style-type:disc;">
+            <li>Commitment is something that comes from understanding that!</li>
+            <li>Its price and then having the willingness to pay that price.</li>
+            <li>his is important because nobody wants to put significant.</li>
+            <li>Effort into something, only to find.</li>
+            <li>Out after the fact that the price was too high.</li>
+         </ul>
+        </div> 
+    </div>
+
+    <button class="accordion"><strong>How will this achievement change my life?</strong></button>
+    <div class="panel">
+      <p>Motivation is not an accident or something that someone else can give you — you are the only one with the power to motivate you.<br>Motivation cannot be an external force, it must come from within as the natural product of your desire to achieve something and<br>your belief that you are capable to succeed at your goal. Success is something of which we all want more.</p>
+        <div class="reponse">
+          <ul style="list-style-type:disc;">
+            <li>Commitment is something that comes from understanding that!</li>
+            <li>Its price and then having the willingness to pay that price.</li>
+            <li>his is important because nobody wants to put significant.</li>
+            <li>Effort into something, only to find.</li>
+            <li>Out after the fact that the price was too high.</li>
+          </ul>
+        </div> 
+    </div>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+              const menuToggle = document.querySelector(".menu-toggle");
+              const navList = document.querySelector(".div");
+
+              menuToggle.addEventListener("click", function () {
+                    navList.classList.toggle("active");
+              });
+            });
+
+        
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+    <!-- Header End -->
+   
+    <footer id="footer">
+        <p>Copyright &copy; Go Gim 2023. All rights Reserved. </b></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #181717;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: 150px;
+  width: 900px;
+}
+
+/* Utility Classes */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-primary {
+    border: 1px solid #EBC336;
+  }
+  
+  .btn-secondary,
+  
+  
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .btn-third {
+    border: 1px solid #EBC336;
+    background: #181717;
+    margin-left: 75%;
+  }
+  
+  .primary-text {
+    color: #EBC336;
+  }
+
+/* Header Start */
+header {
+  height: 13vh;
+  position: relative;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  background-color: #181717;
+}
+#navbar .logo {
+    margin-left: 50px;
+  }
+
+
+nav ul {
+  display: flex;
+  margin-right: 100px;
+}
+
+nav ul li a {
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #EBC336;
+}
+
+header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75%; 
+  margin-left: 5%; 
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+
+header .content h1 {
+  font-size: 40px;
+  padding-right: 40%;
+}
+
+
+
+header * {
+  z-index: 10;
+}
+/* Header End */
+
+h1{
+  color: #fff;
+  margin-left: 30%;  
+}
+
+
+
+img {
+  -webkit-box-reflect: below;
+}
+
+/* .accordion {
+    background-color: #F2F2F2;
+    color: rgb(0,0,0,0.5);
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-top: 5%;
+    margin-left: 0%;
+    margin-right: 80%;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    border-width: 50%;
+    position: center;
+    margin-left: 0%;
+    font-size: 11.75px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .panel p{
+   color:#000;
+   text-align: center;
+   font-size: large;
+  } */
+
+
+/* Inscription Section start */
+#inscription {
+  background: #181717;
+  padding: 5rem 0;
+}
+
+#inscription .container {
+  max-width: 820px;
+}
+
+#inscription .inscription-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 1000px;
+}
+
+#inscription.inscription-info {
+  width: 50%;
+  margin-bottom: 18%;
+}
+
+#inscription .inscription-info div {
+  margin: 30px 0;
+  line-height: 1.7;
+  margin-left: 30%;
+}
+
+#inscription .inscription-info h3 {
+  font-size: 28px;
+  color: #f0f0ff;
+  margin-bottom: 10px;
+}
+
+#inscription .inscription-info p {
+  color: #ffffff;
+  width: 350px;
+  font-size: 18px;
+}
+
+#inscription .inscription-info p i {
+  color: rgb(235, 195, 54, 0.9);
+  margin-right: 0px;
+}
+
+#inscription .inscription-info a i {
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+#inscription .inscription-info a i:hover {
+  background-color: #EBC336;
+}
+
+form {
+  width: 50%;
+  margin-left: 20%;
+}
+
+form input, textarea {
+  display: block;
+  width: 100%;
+  padding: 20px 15px;
+  margin: 20px 0;
+  border: none;
+  background-color: #F2F2F2;
+}
+
+form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+form button {
+  color: #fff;
+}
+/* Inscription Section End */
+
+h1{
+  color: #fff;
+  margin-left: 30%;  
+}
+
+
+
+/* img {
+  -webkit-box-reflect: below;
+} */
+
+.accordion {
+    background-color: #F2F2F2;
+    color: rgb(0,0,0,0.5);
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 8px;
+    transition: 0.4s;
+    margin-top: 15px;
+    margin-left: 0%;
+    margin-right: 8px;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    border-width: 50%;
+    position: center;
+    margin-left: 0%;
+    font-size: 11.75px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+  .panel p{
+   color:#000;
+   text-align: center;
+   font-size: large;
+  }
+
+/* Footer Start */
+#footer {
+  background-color: #181717;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+
+
+
+
+  
+/* Responsiveness */
+/* Medium Screen + Tablet */
+@media (max-width: 1000px) {
+  
+  nav ul {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  header .content h1 {
+    font-size: 28px;
+  }
+
+  /* Mobile Devices */
+  @media (max-width: 767px) {
+    header {
+      height: 15vh;
+      background-size: 100%;
+      position: relative;
+      background-color: #181717;
+  }
+
+  header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%; 
+    margin-left: 5%;
+  }
+  
+  header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(24, 23, 23, 0.6);
+  }
+
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 30px;
+    width: 300px;
+  }
+
+  #navbar .logo {
+    /* padding: 100px 300px 100px 300px; */
+    font-size: 10px;
+    width: 90px;
+    margin: 40px 20px 20px 20px;
+    display: block;
+    right: 100px;
+  }
+  
+  nav ul {
+    display: flex;
+    margin-top: 40px;
+    /* margin-right: 5px; */
+  }
+  
+  nav ul li a {
+    padding: 5px 5px;
+    font-weight: 600;
+    font-size: 7px;
+    height: 40px;
+    margin-top: 70px;
+  }
+
+  nav ul li a:hover {
+        border-bottom: 1px solid #EBC336;
+  }
+
+  .div{
+    right: 100px;
+    margin-bottom: 25px;
+    margin-left: 40px;
+
+  }
+  
+  .primary-text{
+    margin-left: 80px; 
+    font-size: 20px;
+  }
+
+  
+
+  #inscription {
+    background: #181717;
+    /* padding: 1rem 0; */
+  }
+  
+  #inscription .container {
+    max-width: 80px;
+  }
+  
+  #inscription .inscription-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    width: 500px;
+  }
+  
+  #inscription.inscription-info {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  
+  #inscription .inscription-info div {
+    margin: 30px 0;
+    line-height: 1.7;
+    margin-left: 5px;
+  }
+  
+  #inscription .inscription-info h3 {
+    font-size: 15px;
+    color: #f0f0ff;
+    /* margin-bottom: 10px; */
+  }
+  
+  #inscription .inscription-info p {
+    color: #ffffff;
+    width: 350px;
+    font-size: 8px;
+  }
+  
+  #inscription .inscription-info p i {
+    color: rgb(235, 195, 54, 0.9);
+    margin-right: 0px;
+  }
+  
+  #inscription .inscription-info a i {
+    color: #fff;
+    padding: 10px;
+    font-size: 8px;
+    border-radius: 50%;
+  }
+  
+  #inscription .inscription-info a i:hover {
+    background-color: #EBC336;
+  }
+  
+  form {
+    width: 300px;
+    margin-left: 280px;
+
+  }
+  
+  form input, textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #F2F2F2;
+  }
+  
+  form input:focus,
+  textarea:focus {
+    outline: none;
+  }
+  
+  form button {
+    color: #fff;
+  }
+
+    
+
+  #footer {
+    background-color: #181717;
+    text-align: center;
+    color: #fff;
+    padding: 5px 0;
+    font-size: 8px;
+    margin-top: 200px;
+    /* margin-bottom: 15px; */
+  }
+
+  }
+}
